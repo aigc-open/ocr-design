@@ -1,0 +1,138 @@
+<mxfile host="65bd71144e">
+    <diagram name="多模态数据融合流程" id="fusion-flow">
+        <mxGraphModel dx="1589" dy="1443" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1300" pageHeight="900" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="title" value="多模态数据融合流程" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=20;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="550" y="20" width="250" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="input-section" value="多模态输入数据源" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=16;fontStyle=1;verticalAlign=top;" parent="1" vertex="1">
+                    <mxGeometry x="30" y="80" width="1220" height="180" as="geometry"/>
+                </mxCell>
+                <mxCell id="visual-data" value="1. 视觉信息" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=14;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="80" y="120" width="250" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="visual-details" value="• 仪表图像 (1920×1080)&#10;• 检测框坐标 [x,y,w,h]&#10;• 指针分割掩码&#10;• 关键点位置坐标&#10;• 图像质量评分: 0.89" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;align=left;" parent="1" vertex="1">
+                    <mxGeometry x="80" y="160" width="250" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="text-data" value="2. 文本信息" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=14;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="370" y="120" width="250" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="text-details" value="• 识别数值: 6.3MPa&#10;• 仪表类型: 压力表&#10;• 量程信息: 0-10MPa&#10;• 单位: MPa&#10;• 置信度: 0.85" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;align=left;" parent="1" vertex="1">
+                    <mxGeometry x="370" y="160" width="250" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="context-data" value="3. 上下文信息" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=14;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="660" y="120" width="250" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="context-details" value="• 历史读数: [5.8,6.1,6.0,5.9]&#10;• 设备档案: PM-001&#10;• 环境温度: 25°C&#10;• 时间戳: 2024-01-20 14:30&#10;• 操作员: 张工" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;align=left;" parent="1" vertex="1">
+                    <mxGeometry x="660" y="160" width="250" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="domain-data" value="4. 领域知识" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=14;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="950" y="120" width="250" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="domain-details" value="• 仪表规范: GB/T1226-2017&#10;• 正常工作范围: 5.5-6.5MPa&#10;• 报警阈值: 7.0MPa&#10;• 安全阈值: 8.0MPa&#10;• 精度等级: ±2%" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;align=left;" parent="1" vertex="1">
+                    <mxGeometry x="950" y="160" width="250" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="extraction-section" value="特征提取层" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=16;fontStyle=1;verticalAlign=top;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="280" width="1210" height="130" as="geometry"/>
+                </mxCell>
+                <mxCell id="visual-encoder" value="视觉编码器&#10;CNN + Transformer" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+                    <mxGeometry x="80" y="320" width="120" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="text-encoder" value="文本编码器&#10;BERT-like" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+                    <mxGeometry x="230" y="320" width="120" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="context-encoder" value="上下文编码器&#10;时序+统计特征" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
+                    <mxGeometry x="380" y="320" width="120" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="domain-encoder" value="知识图谱&#10;嵌入编码器" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
+                    <mxGeometry x="530" y="320" width="120" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="visual-feature" value="视觉特征&#10;V ∈ R^512" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+                    <mxGeometry x="680" y="300" width="80" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="text-feature" value="文本特征&#10;T ∈ R^512" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+                    <mxGeometry x="780" y="300" width="80" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="context-feature" value="上下文特征&#10;C ∈ R^512" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+                    <mxGeometry x="680" y="350" width="80" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="domain-feature" value="领域特征&#10;D ∈ R^512" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+                    <mxGeometry x="780" y="350" width="80" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="alignment-section" value="特征对齐层" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=16;fontStyle=1;verticalAlign=top;" parent="1" vertex="1">
+                    <mxGeometry x="940" y="290" width="300" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="alignment-process" value="统一空间映射&#10;• 线性投影层&#10;• 归一化处理&#10;• 维度对齐 R^512" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;align=left;" parent="1" vertex="1">
+                    <mxGeometry x="980" y="320" width="240" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="attention-section" value="交叉注意力机制" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=16;fontStyle=1;verticalAlign=top;" parent="1" vertex="1">
+                    <mxGeometry x="50" y="420" width="600" height="180" as="geometry"/>
+                </mxCell>
+                <mxCell id="attention-matrix" value="注意力权重计算" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=14;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="80" y="460" width="150" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="attention-formula" value="Attention(Q,K,V) = softmax(QK^T/√d)V&#10;&#10;• Q: 查询矩阵 (视觉特征)&#10;• K: 键矩阵 (所有模态特征)&#10;• V: 值矩阵 (所有模态特征)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;align=left;" parent="1" vertex="1">
+                    <mxGeometry x="80" y="500" width="250" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="fusion-section" value="特征融合层" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=16;fontStyle=1;verticalAlign=top;" parent="1" vertex="1">
+                    <mxGeometry x="690" y="420" width="560" height="180" as="geometry"/>
+                </mxCell>
+                <mxCell id="fusion-strategy" value="融合策略" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=14;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="710" y="435" width="100" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="fusion-methods" value="1. 加权平均融合:&#10;   F_avg = α·V + β·T + γ·C + δ·D&#10;&#10;2. 注意力加权融合:&#10;   F_att = Σ(w_i · X_i), w_i = Attention(X_i)&#10;&#10;3. 门控融合机制:&#10;   F_gate = Gate(V,T,C,D)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;align=left;" parent="1" vertex="1">
+                    <mxGeometry x="995" y="465" width="225" height="130" as="geometry"/>
+                </mxCell>
+                <mxCell id="output-section" value="融合特征输出" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=16;fontStyle=1;verticalAlign=top;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="650" width="1210" height="150" as="geometry"/>
+                </mxCell>
+                <mxCell id="flow1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" source="visual-details" target="visual-encoder" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="flow2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" source="text-details" target="text-encoder" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="flow3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" source="visual-feature" target="attention-matrix" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="flow4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=3;fillColor=#d5e8d4;strokeColor=#82b366;startArrow=none;" parent="1" source="correlation-matrix" target="2" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="300" y="610" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="2" value="多模态融合特征&#10;F_multimodal ∈ R^512" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+                    <mxGeometry x="200" y="690" width="200" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="增强表示特征" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+                    <mxGeometry x="450" y="690" width="150" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="上下文嵌入向量" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+                    <mxGeometry x="650" y="690" width="150" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="决策级特征" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+                    <mxGeometry x="850" y="690" width="120" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=3;fillColor=#d5e8d4;strokeColor=#82b366;endArrow=none;" edge="1" parent="1" source="fusion-methods" target="fusion-weights">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="990" y="525" as="sourcePoint"/>
+                        <mxPoint x="300" y="690" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="fusion-weights" value="权重分配:&#10;α=0.4 (视觉)&#10;β=0.3 (文本)&#10;γ=0.2 (上下文)&#10;δ=0.1 (领域)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;align=left;" parent="1" vertex="1">
+                    <mxGeometry x="740" y="490" width="120" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=3;fillColor=#d5e8d4;strokeColor=#82b366;startArrow=none;endArrow=none;" edge="1" parent="1" source="fusion-weights" target="correlation-matrix">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="740" y="530" as="sourcePoint"/>
+                        <mxPoint x="300" y="690" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="correlation-matrix" value="模态间相关性矩阵&#10;&#10;        V    T    C    D&#10;V   [1.0  0.8  0.6  0.7]&#10;T   [0.8  1.0  0.5  0.9]&#10;C   [0.6  0.5  1.0  0.4]&#10;D   [0.7  0.9  0.4  1.0]" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;align=left;fontFamily=Courier;" parent="1" vertex="1">
+                    <mxGeometry x="365" y="472.5" width="260" height="115" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

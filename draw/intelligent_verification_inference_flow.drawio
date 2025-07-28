@@ -1,0 +1,113 @@
+<mxfile host="65bd71144e">
+    <diagram name="智能校验推理流程" id="validation-flow">
+        <mxGraphModel dx="1190" dy="1203" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="900" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="title" value="智能校验推理流程" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=20;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="500" y="20" width="200" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="stage1-title" value="Stage 1: 一致性检验" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=16;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="50" y="80" width="300" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="stage1-input" value="输入数据" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=14;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="50" y="140" width="100" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="edge-result-input" value="边缘识别结果&#10;• 数值: 6.3MPa&#10;• 置信度: 0.85&#10;• 检测框坐标" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+                    <mxGeometry x="50" y="200" width="120" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="original-image" value="原始图像&#10;• 仪表照片&#10;• 分辨率信息&#10;• 拍摄参数" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+                    <mxGeometry x="190" y="200" width="120" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="stage1-process" value="vLLM推理分析" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=14;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="50" y="300" width="260" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="consistency-check" value="一致性分析：&lt;br&gt;• 图像中指针位置与数值是否在误差范围内？&lt;br&gt;• 量程范围检查 (0-10MPa)&lt;br&gt;• 指针角度计算验证&lt;br&gt;• 刻度对应关系检查" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;align=left;" parent="1" vertex="1">
+                    <mxGeometry x="50" y="360" width="260" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="stage1-output" value="输出结果" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=14;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="50" y="460" width="100" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="consistency-score" value="一致性评分: 92%&#10;置信度: 0.91&#10;验证状态: 通过" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+                    <mxGeometry x="50" y="520" width="140" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="stage2-title" value="Stage 2: 异常检测分析" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=16;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="450" y="80" width="300" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="stage2-input" value="输入数据" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=14;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="450" y="140" width="100" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="current-reading" value="当前读数&#10;6.3MPa" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+                    <mxGeometry x="450" y="200" width="80" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="historical-data-input" value="历史数据&#10;[5.8, 6.1, 6.0, 5.9]MPa&#10;近7天均值: 5.95MPa" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+                    <mxGeometry x="550" y="200" width="120" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="device-info" value="设备信息&#10;• 设备ID: PM-001&#10;• 正常范围: 5.5-6.5MPa&#10;• 报警阈值: 7.0MPa" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+                    <mxGeometry x="690" y="200" width="130" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="stage2-process" value="时序分析 + 领域知识推理" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=14;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="450" y="300" width="270" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="anomaly-analysis" value="异常检测分析：&lt;br&gt;• 趋势分析: 读数呈上升趋势 (+0.35MPa)&lt;br&gt;• 统计检验: 超出2σ范围 (5.95±0.1)&lt;br&gt;• 领域规则: 未超出设备正常范围" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;align=left;" parent="1" vertex="1">
+                    <mxGeometry x="450" y="360" width="270" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="stage2-output" value="输出结果" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=14;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="450" y="460" width="100" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="anomaly-result" value="异常类型: 数值偏高&#10;风险等级: 中等&#10;原因分析: 可能的压力增长&#10;建议: 继续监控" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
+                    <mxGeometry x="450" y="520" width="160" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="stage3-title" value="Stage 3: 智能建议生成" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=16;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="850" y="80" width="300" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="stage3-input" value="输入数据" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=14;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="850" y="140" width="100" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="analysis-results" value="分析结果&#10;• 一致性: 92%&#10;• 异常: 数值偏高&#10;• 风险: 中等" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+                    <mxGeometry x="850" y="200" width="110" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="context-info" value="上下文信息&#10;• 操作员: 张工&#10;• 设备状态: 运行中&#10;• 环境温度: 25°C" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+                    <mxGeometry x="980" y="200" width="120" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="stage3-process" value="人机交互友好的报告生成" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=14;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="850" y="300" width="250" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="report-generation" value="智能报告生成：&#10;• 结构化数据整理&#10;• 自然语言描述生成&#10;• 操作建议制定&#10;• 风险提示格式化" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;align=left;" parent="1" vertex="1">
+                    <mxGeometry x="850" y="360" width="250" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="stage3-output" value="最终输出" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=14;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="850" y="460" width="100" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="final-report" value="校验报告：&#10;✓ 识别结果可信 (92%)&#10;⚠ 数值异常偏高&#10;📊 建议: 持续监控压力变化&#10;🔔 下次检查: 2小时后" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;align=left;" parent="1" vertex="1">
+                    <mxGeometry x="850" y="520" width="200" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="flow-stage1-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=3;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" source="stage1-output" target="stage2-input" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="380" y="480"/>
+                            <mxPoint x="380" y="160"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="flow-stage2-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=3;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" source="stage2-output" target="stage3-input" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="780" y="480"/>
+                            <mxPoint x="780" y="160"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="time-stage1" value="处理时间: ~0.6s" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;fontStyle=2;" parent="1" vertex="1">
+                    <mxGeometry x="200" y="580" width="100" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="time-stage2" value="处理时间: ~0.8s" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;fontStyle=2;" parent="1" vertex="1">
+                    <mxGeometry x="540" y="610" width="100" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="time-stage3" value="处理时间: ~0.6s" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;fontStyle=2;" parent="1" vertex="1">
+                    <mxGeometry x="950" y="630" width="100" height="20" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
