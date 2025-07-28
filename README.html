@@ -62,21 +62,20 @@
 <p>在工业 4.0 与智能制造蓬勃发展的时代浪潮下，工业生产领域的数字化、智能化转型成为必然趋势。指针式仪表作为工业生产过程中监测压力、温度、流量等关键参数的核心设备，其数据的准确性和实时性直接决定着生产安全与效率。然而，传统的人工巡检读数方式，已成为制约工业智能化进程的显著瓶颈。</p>
 <h3>1.2 项目目标​</h3>
 <h4>1.2.1 技术精度目标</h4>
+<h5>识别精度目标</h5>
 <ul>
-<li>
-<p>识别精度目标：读数误差在±4%范围内的识别准确率≥95%，确保在复杂工业环境下的稳定识别</p>
-<p>精度评估方法：</p>
+<li>读数误差在±4%范围内的识别准确率≥95%，确保在复杂工业环境下的稳定识别</li>
+</ul>
+<h5>精度评估方法：</h5>
 <ul>
 <li>读数误差计算：读数误差 = |识别读数 - 标准读数| / 量程 × 100%</li>
 <li>准确率计算：准确率 = 读数误差在±4%范围内的样本数 / 总样本数 × 100%</li>
 </ul>
-<p>验证方法示例：<br />
-某压力表量程为10MPa，标准读数为6MPa，识别读数为6.3MPa</p>
+<h5>验证方法示例：</h5>
 <ul>
+<li>某压力表量程为10MPa，标准读数为6MPa，识别读数为6.3MPa</li>
 <li>读数误差 = |6.3 - 6| / 10 × 100% = 3% &lt; 4%，判定为正确识别</li>
 <li>在100次测试中，若有95次误差在±4%以内，则准确率 = 95/100 = 95%，达到精度目标</li>
-</ul>
-</li>
 </ul>
 <h4>1.2.2 性能目标</h4>
 <ul>
@@ -465,27 +464,15 @@
 <p><img src="images/model_training_optimization.png" alt="" /></p>
 <h4>7.1.4 效果验证</h4>
 <p>系统在多种类型的指针式仪表上进行了测试验证，包括压力表、温度表、流量表等不同类型仪表，在不同光照条件、角度和环境下均表现出良好的识别效果。</p>
-<table>
-<thead>
-<tr>
-<th style="text-align:center"><img src="images/validation_result_1.png" alt="" /></th>
-<th style="text-align:center"><img src="images/validation_result_2.png" alt="" /></th>
-<th style="text-align:center"><img src="images/validation_result_3.png" alt="" /></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center"><img src="images/validation_result_4.png" alt="" /></td>
-<td style="text-align:center"><img src="images/validation_result_5.png" alt="" /></td>
-<td style="text-align:center"><img src="images/validation_result_6.png" alt="" /></td>
-</tr>
-<tr>
-<td style="text-align:center"><img src="images/validation_result_7.png" alt="" /></td>
-<td style="text-align:center"><img src="images/validation_result_8.png" alt="" /></td>
-<td style="text-align:center"><img src="images/validation_result_9.png" alt="" /></td>
-</tr>
-</tbody>
-</table>
+<p><img src="images/validation_result_1.png" alt="" /><br />
+<img src="images/validation_result_2.png" alt="" /><br />
+<img src="images/validation_result_3.png" alt="" /><br />
+<img src="images/validation_result_4.png" alt="" /><br />
+<img src="images/validation_result_5.png" alt="" /><br />
+<img src="images/validation_result_6.png" alt="" /><br />
+<img src="images/validation_result_7.png" alt="" /><br />
+<img src="images/validation_result_8.png" alt="" /><br />
+<img src="images/validation_result_9.png" alt="" /></p>
 <h3>7.2 多模态大模型数据辅助校验算法</h3>
 <h4>7.2.1 vLLM推理框架原理</h4>
 <p>vLLM（Versatile Large Language Model）是专门为大语言模型推理优化的高性能推理框架，具有以下核心特点：</p>
