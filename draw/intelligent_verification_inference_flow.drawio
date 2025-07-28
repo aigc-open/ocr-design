@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram name="智能校验推理流程" id="validation-flow">
-        <mxGraphModel dx="1190" dy="1203" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="900" math="0" shadow="0">
+        <mxGraphModel dx="2165" dy="798" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="900" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -28,9 +28,6 @@
                 <mxCell id="stage1-output" value="输出结果" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=14;fontStyle=1;" parent="1" vertex="1">
                     <mxGeometry x="50" y="460" width="100" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="consistency-score" value="一致性评分: 92%&#10;置信度: 0.91&#10;验证状态: 通过" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
-                    <mxGeometry x="50" y="520" width="140" height="60" as="geometry"/>
-                </mxCell>
                 <mxCell id="stage2-title" value="Stage 2: 异常检测分析" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=16;fontStyle=1;" parent="1" vertex="1">
                     <mxGeometry x="450" y="80" width="300" height="40" as="geometry"/>
                 </mxCell>
@@ -55,9 +52,6 @@
                 <mxCell id="stage2-output" value="输出结果" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=14;fontStyle=1;" parent="1" vertex="1">
                     <mxGeometry x="450" y="460" width="100" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="anomaly-result" value="异常类型: 数值偏高&#10;风险等级: 中等&#10;原因分析: 可能的压力增长&#10;建议: 继续监控" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
-                    <mxGeometry x="450" y="520" width="160" height="80" as="geometry"/>
-                </mxCell>
                 <mxCell id="stage3-title" value="Stage 3: 智能建议生成" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=16;fontStyle=1;" parent="1" vertex="1">
                     <mxGeometry x="850" y="80" width="300" height="40" as="geometry"/>
                 </mxCell>
@@ -79,9 +73,6 @@
                 <mxCell id="stage3-output" value="最终输出" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=14;fontStyle=1;" parent="1" vertex="1">
                     <mxGeometry x="850" y="460" width="100" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="final-report" value="校验报告：&#10;✓ 识别结果可信 (92%)&#10;⚠ 数值异常偏高&#10;📊 建议: 持续监控压力变化&#10;🔔 下次检查: 2小时后" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;align=left;" parent="1" vertex="1">
-                    <mxGeometry x="850" y="520" width="200" height="100" as="geometry"/>
-                </mxCell>
                 <mxCell id="flow-stage1-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=3;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" source="stage1-output" target="stage2-input" edge="1">
                     <mxGeometry relative="1" as="geometry">
                         <Array as="points">
@@ -97,15 +88,6 @@
                             <mxPoint x="780" y="160"/>
                         </Array>
                     </mxGeometry>
-                </mxCell>
-                <mxCell id="time-stage1" value="处理时间: ~0.6s" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;fontStyle=2;" parent="1" vertex="1">
-                    <mxGeometry x="200" y="580" width="100" height="20" as="geometry"/>
-                </mxCell>
-                <mxCell id="time-stage2" value="处理时间: ~0.8s" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;fontStyle=2;" parent="1" vertex="1">
-                    <mxGeometry x="540" y="610" width="100" height="20" as="geometry"/>
-                </mxCell>
-                <mxCell id="time-stage3" value="处理时间: ~0.6s" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;fontStyle=2;" parent="1" vertex="1">
-                    <mxGeometry x="950" y="630" width="100" height="20" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>
