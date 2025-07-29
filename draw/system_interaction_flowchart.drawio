@@ -1,11 +1,11 @@
 <mxfile host="65bd71144e">
     <diagram name="便携式指针式仪表数据智能读取装置系统交互流程图" id="interaction-flow-diagram">
-        <mxGraphModel dx="3664" dy="700" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2400" pageHeight="2000" math="0" shadow="0">
+        <mxGraphModel dx="4006" dy="1211" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2400" pageHeight="2000" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
                 <mxCell id="background" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=none;opacity=50;" parent="1" vertex="1">
-                    <mxGeometry x="-20" y="10" width="2400" height="1270" as="geometry"/>
+                    <mxGeometry x="-60" width="2400" height="1040" as="geometry"/>
                 </mxCell>
                 <mxCell id="main-title" value="便携式指针式仪表数据智能读取装置系统交互流程图" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=32;fontStyle=1;fontColor=#1565c0;fontFamily=Microsoft YaHei;" parent="1" vertex="1">
                     <mxGeometry x="800" y="30" width="800" height="60" as="geometry"/>
@@ -16,7 +16,7 @@
                 <mxCell id="step1" value="1⃣&lt;br&gt;&lt;b&gt;巡检人员&lt;/b&gt;&lt;br&gt;&lt;b&gt;现场拍摄&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#666666&quot;&gt;手持拍摄杆对准仪表&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#4caf50;strokeWidth=2;shadow=1;fontFamily=Microsoft YaHei;" parent="1" vertex="1">
                     <mxGeometry x="80" y="200" width="140" height="70" as="geometry"/>
                 </mxCell>
-                <mxCell id="step2" value="2⃣&lt;br&gt;&lt;b&gt;图像采集&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#666666&quot;&gt;4K高清拍摄&lt;br&gt;质量检测&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#1976d2;strokeWidth=2;shadow=1;fontFamily=Microsoft YaHei;" parent="1" vertex="1">
+                <mxCell id="step2" value="2⃣&lt;br&gt;&lt;b&gt;图像采集&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#666666&quot;&gt;4K高清拍摄&lt;br&gt;&lt;br&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#1976d2;strokeWidth=2;shadow=1;fontFamily=Microsoft YaHei;" parent="1" vertex="1">
                     <mxGeometry x="280" y="200" width="140" height="70" as="geometry"/>
                 </mxCell>
                 <mxCell id="step3" value="3⃣&lt;br&gt;&lt;b&gt;元数据记录&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#666666&quot;&gt;时间戳、GPS位置&lt;br&gt;设备编号&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#1976d2;strokeWidth=2;shadow=1;fontFamily=Microsoft YaHei;" parent="1" vertex="1">
@@ -31,7 +31,7 @@
                 <mxCell id="step4" value="4⃣&lt;br&gt;&lt;b&gt;本地缓存&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#666666&quot;&gt;图片暂存&lt;br&gt;网络检测&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#1976d2;strokeWidth=2;shadow=1;fontFamily=Microsoft YaHei;" parent="1" vertex="1">
                     <mxGeometry x="680" y="200" width="140" height="70" as="geometry"/>
                 </mxCell>
-                <mxCell id="step5" value="5⃣&lt;br&gt;&lt;b&gt;数据传输&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#666666&quot;&gt;蓝牙/WiFi&lt;br&gt;至边缘设备&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#1976d2;strokeWidth=2;shadow=1;fontFamily=Microsoft YaHei;" parent="1" vertex="1">
+                <mxCell id="step5" value="5⃣&lt;br&gt;&lt;b&gt;数据传输&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#666666&quot;&gt;局域网&lt;br&gt;至边缘设备&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#1976d2;strokeWidth=2;shadow=1;fontFamily=Microsoft YaHei;" parent="1" vertex="1">
                     <mxGeometry x="880" y="200" width="140" height="70" as="geometry"/>
                 </mxCell>
                 <mxCell id="network-check" value="网络&lt;br&gt;是否可用？" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontFamily=Microsoft YaHei;shadow=1;" parent="1" vertex="1">
@@ -58,7 +58,7 @@
                 <mxCell id="manual-verify" value="👁️&lt;br&gt;&lt;b&gt;人工校验&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#666666&quot;&gt;专家审核&lt;br&gt;结果确认&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffebee;strokeColor=#f44336;strokeWidth=2;shadow=1;fontFamily=Microsoft YaHei;" parent="1" vertex="1">
                     <mxGeometry x="1680" y="440" width="140" height="70" as="geometry"/>
                 </mxCell>
-                <mxCell id="step10" value="10&lt;br&gt;&lt;b&gt;数值读取&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#666666&quot;&gt;PPOCRv3&lt;br&gt;量程解析&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#7b1fa2;strokeWidth=2;shadow=1;fontFamily=Microsoft YaHei;" parent="1" vertex="1">
+                <mxCell id="step10" value="10&lt;br&gt;&lt;b&gt;数值读取&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#666666&quot;&gt;PPOCR&lt;br&gt;量程解析&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#7b1fa2;strokeWidth=2;shadow=1;fontFamily=Microsoft YaHei;" parent="1" vertex="1">
                     <mxGeometry x="1880" y="200" width="140" height="70" as="geometry"/>
                 </mxCell>
                 <mxCell id="step11" value="11⃣&lt;br&gt;&lt;b&gt;融合计算&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#666666&quot;&gt;角度计算&lt;br&gt;数值转换&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#7b1fa2;strokeWidth=2;shadow=1;fontFamily=Microsoft YaHei;" parent="1" vertex="1">
@@ -79,7 +79,7 @@
                 <mxCell id="step14" value="1⃣4⃣&lt;br&gt;&lt;b&gt;数据存储&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#666666&quot;&gt;分布式数据库&lt;br&gt;设备档案&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#f57c00;strokeWidth=2;shadow=1;fontFamily=Microsoft YaHei;" parent="1" vertex="1">
                     <mxGeometry x="680" y="600" width="140" height="70" as="geometry"/>
                 </mxCell>
-                <mxCell id="step15" value="1⃣5⃣&lt;br&gt;&lt;b&gt;趋势分析&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#666666&quot;&gt;AI预测&lt;br&gt;模式识别&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#f57c00;strokeWidth=2;shadow=1;fontFamily=Microsoft YaHei;" parent="1" vertex="1">
+                <mxCell id="step15" value="1⃣5⃣&lt;br&gt;&lt;b&gt;智能分析&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#666666&quot;&gt;AI智能分析&lt;br&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#f57c00;strokeWidth=2;shadow=1;fontFamily=Microsoft YaHei;" parent="1" vertex="1">
                     <mxGeometry x="880" y="600" width="140" height="70" as="geometry"/>
                 </mxCell>
                 <mxCell id="step16" value="1⃣6⃣&lt;br&gt;&lt;b&gt;实时监控&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#666666&quot;&gt;关键指标&lt;br&gt;预警触发&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#f57c00;strokeWidth=2;shadow=1;fontFamily=Microsoft YaHei;" parent="1" vertex="1">
@@ -297,63 +297,6 @@
                 </mxCell>
                 <mxCell id="layer-management" value="📊 管理展示层" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;fontStyle=1;fontColor=#c2185b;fontFamily=Microsoft YaHei;" parent="1" vertex="1">
                     <mxGeometry x="1480" y="540" width="150" height="30" as="geometry"/>
-                </mxCell>
-                <mxCell id="timeline-title" value="⏱️ 处理时间轴" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;fontStyle=1;fontColor=#1565c0;fontFamily=Microsoft YaHei;" parent="1" vertex="1">
-                    <mxGeometry x="120" y="1000" width="150" height="30" as="geometry"/>
-                </mxCell>
-                <mxCell id="time-realtime" value="🕐 实时处理 (≤3秒)&lt;br&gt;端侧采集 + 边缘AI推理" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#c8e6c9;strokeColor=#4caf50;strokeWidth=2;fontFamily=Microsoft YaHei;shadow=1;" parent="1" vertex="1">
-                    <mxGeometry x="120" y="1040" width="300" height="50" as="geometry"/>
-                </mxCell>
-                <mxCell id="time-cloud" value="☁️ 云端校验 (5-10秒)&lt;br&gt;大模型二次验证 + 数据存储" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff3e0;strokeColor=#ff9800;strokeWidth=2;fontFamily=Microsoft YaHei;shadow=1;" parent="1" vertex="1">
-                    <mxGeometry x="450" y="1040" width="300" height="50" as="geometry"/>
-                </mxCell>
-                <mxCell id="time-analysis" value="📊 深度分析 (分钟级)&lt;br&gt;趋势分析 + 预测模型 + 报表生成" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1bee7;strokeColor=#9c27b0;strokeWidth=2;fontFamily=Microsoft YaHei;shadow=1;" parent="1" vertex="1">
-                    <mxGeometry x="780" y="1040" width="300" height="50" as="geometry"/>
-                </mxCell>
-                <mxCell id="kpi-title" value="📊 关键性能指标 (KPI)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;fontStyle=1;fontColor=#1565c0;fontFamily=Microsoft YaHei;" parent="1" vertex="1">
-                    <mxGeometry x="120" y="1120" width="200" height="30" as="geometry"/>
-                </mxCell>
-                <mxCell id="kpi-accuracy" value="🎯 识别准确率&lt;br&gt;&lt;b&gt;≥95%&lt;/b&gt;&lt;br&gt;&lt;font size=&quot;2&quot;&gt;(±4%误差范围)&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#c8e6c9;strokeColor=#4caf50;strokeWidth=2;fontFamily=Microsoft YaHei;shadow=1;" parent="1" vertex="1">
-                    <mxGeometry x="120" y="1160" width="120" height="50" as="geometry"/>
-                </mxCell>
-                <mxCell id="kpi-speed" value="⚡ 响应时间&lt;br&gt;&lt;b&gt;≤3秒&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#c8e6c9;strokeColor=#4caf50;strokeWidth=2;fontFamily=Microsoft YaHei;shadow=1;" parent="1" vertex="1">
-                    <mxGeometry x="260" y="1160" width="120" height="50" as="geometry"/>
-                </mxCell>
-                <mxCell id="kpi-precision" value="📏 读数精度&lt;br&gt;&lt;b&gt;±4%≥95%&lt;/b&gt;&lt;br&gt;&lt;font size=&quot;2&quot;&gt;±2%≥90%&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#c8e6c9;strokeColor=#4caf50;strokeWidth=2;fontFamily=Microsoft YaHei;shadow=1;" parent="1" vertex="1">
-                    <mxGeometry x="400" y="1160" width="120" height="50" as="geometry"/>
-                </mxCell>
-                <mxCell id="kpi-uptime" value="⏰ 系统可用性&lt;br&gt;&lt;b&gt;≥99.9%&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#c8e6c9;strokeColor=#4caf50;strokeWidth=2;fontFamily=Microsoft YaHei;shadow=1;" parent="1" vertex="1">
-                    <mxGeometry x="540" y="1160" width="120" height="50" as="geometry"/>
-                </mxCell>
-                <mxCell id="kpi-battery" value="🔋 续航时间&lt;br&gt;&lt;b&gt;8-10小时&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#c8e6c9;strokeColor=#4caf50;strokeWidth=2;fontFamily=Microsoft YaHei;shadow=1;" parent="1" vertex="1">
-                    <mxGeometry x="680" y="1160" width="120" height="50" as="geometry"/>
-                </mxCell>
-                <mxCell id="kpi-efficiency" value="🤖 大模型辅助&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;&lt;b style=&quot;border-color: var(--border-color);&quot;&gt;异常检测&lt;/b&gt;&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;&lt;font style=&quot;border-color: var(--border-color);&quot; size=&quot;2&quot;&gt;(趋势分析)&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#c8e6c9;strokeColor=#4caf50;strokeWidth=2;fontFamily=Microsoft YaHei;shadow=1;" parent="1" vertex="1">
-                    <mxGeometry x="820" y="1160" width="120" height="50" as="geometry"/>
-                </mxCell>
-                <mxCell id="data-volume-title" value="📊 数据流量分析" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;fontStyle=1;fontColor=#1565c0;fontFamily=Microsoft YaHei;" parent="1" vertex="1">
-                    <mxGeometry x="1250" y="1000" width="200" height="30" as="geometry"/>
-                </mxCell>
-                <mxCell id="data-image" value="📷 图像数据&lt;br&gt;4K: ~8MB/张&lt;br&gt;1080p: ~2MB/张" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e3f2fd;strokeColor=#1976d2;strokeWidth=2;fontFamily=Microsoft YaHei;shadow=1;" parent="1" vertex="1">
-                    <mxGeometry x="1250" y="1040" width="140" height="60" as="geometry"/>
-                </mxCell>
-                <mxCell id="data-result" value="📊 识别结果&lt;br&gt;JSON: ~1KB/次&lt;br&gt;元数据: ~0.5KB/次" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff3e0;strokeColor=#f57c00;strokeWidth=2;fontFamily=Microsoft YaHei;shadow=1;" parent="1" vertex="1">
-                    <mxGeometry x="1410" y="1040" width="140" height="60" as="geometry"/>
-                </mxCell>
-                <mxCell id="data-analytics" value="📈 分析数据&lt;br&gt;历史趋势: ~10MB/天&lt;br&gt;实时监控: ~1MB/小时" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f3e5f5;strokeColor=#9c27b0;strokeWidth=2;fontFamily=Microsoft YaHei;shadow=1;" parent="1" vertex="1">
-                    <mxGeometry x="1570" y="1040" width="140" height="60" as="geometry"/>
-                </mxCell>
-                <mxCell id="security-title" value="🔒 安全保障措施" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;fontStyle=1;fontColor=#1565c0;fontFamily=Microsoft YaHei;" parent="1" vertex="1">
-                    <mxGeometry x="1250" y="1120" width="200" height="30" as="geometry"/>
-                </mxCell>
-                <mxCell id="security-encrypt" value="🔐 数据加密&lt;br&gt;AES-256加密&lt;br&gt;HTTPS传输" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fce4ec;strokeColor=#e91e63;strokeWidth=2;fontFamily=Microsoft YaHei;shadow=1;" parent="1" vertex="1">
-                    <mxGeometry x="1250" y="1160" width="120" height="50" as="geometry"/>
-                </mxCell>
-                <mxCell id="security-auth" value="👤 身份认证&lt;br&gt;多重验证&lt;br&gt;权限控制" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fce4ec;strokeColor=#e91e63;strokeWidth=2;fontFamily=Microsoft YaHei;shadow=1;" parent="1" vertex="1">
-                    <mxGeometry x="1390" y="1160" width="120" height="50" as="geometry"/>
-                </mxCell>
-                <mxCell id="security-audit" value="📝 审计日志&lt;br&gt;操作记录&lt;br&gt;追踪溯源" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fce4ec;strokeColor=#e91e63;strokeWidth=2;fontFamily=Microsoft YaHei;shadow=1;" parent="1" vertex="1">
-                    <mxGeometry x="1530" y="1160" width="120" height="50" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>

@@ -1,11 +1,11 @@
 <mxfile host="65bd71144e">
     <diagram name="便携式指针式仪表数据智能读取装置架构图" id="architecture-diagram">
-        <mxGraphModel dx="1580" dy="875" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1920" pageHeight="1600" math="0" shadow="0">
+        <mxGraphModel dx="1786" dy="1211" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1920" pageHeight="1600" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
                 <mxCell id="background" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=none;opacity=50;" parent="1" vertex="1">
-                    <mxGeometry width="1920" height="1730" as="geometry"/>
+                    <mxGeometry width="1920" height="1570" as="geometry"/>
                 </mxCell>
                 <mxCell id="main-title" value="便携式指针式仪表数据智能读取装置系统架构图" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=28;fontStyle=1;fontColor=#1565c0;fontFamily=Microsoft YaHei;" parent="1" vertex="1">
                     <mxGeometry x="660" y="30" width="600" height="50" as="geometry"/>
@@ -29,16 +29,16 @@
                     <mxGeometry x="900" y="190" width="140" height="60" as="geometry"/>
                 </mxCell>
                 <mxCell id="terminal-background" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e3f2fd;strokeColor=#1976d2;strokeWidth=3;shadow=1;glass=0;sketch=0;" parent="1" vertex="1">
-                    <mxGeometry x="100" y="320" width="1720" height="300" as="geometry"/>
+                    <mxGeometry x="100" y="320" width="1720" height="270" as="geometry"/>
                 </mxCell>
                 <mxCell id="terminal-title" value="📱 端侧设备层 (Terminal)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;fontStyle=1;fontColor=#1565c0;fontFamily=Microsoft YaHei;" parent="1" vertex="1">
                     <mxGeometry x="130" y="330" width="280" height="35" as="geometry"/>
                 </mxCell>
-                <mxCell id="terminal-desc" value="手机 + 拍摄杆组合 | 图像采集 | 蓝牙/WiFi传输" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;fontColor=#666666;fontFamily=Microsoft YaHei;" parent="1" vertex="1">
+                <mxCell id="terminal-desc" value="手机 + 拍摄杆组合 | 图像采集 | 蓝牙/局域网传输" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;fontColor=#666666;fontFamily=Microsoft YaHei;" parent="1" vertex="1">
                     <mxGeometry x="130" y="365" width="400" height="25" as="geometry"/>
                 </mxCell>
                 <mxCell id="shooting-pole" value="📐 拍摄杆机械结构" style="swimlane;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#1976d2;strokeWidth=2;shadow=1;fontFamily=Microsoft YaHei;startSize=30;" parent="1" vertex="1">
-                    <mxGeometry x="150" y="410" width="360" height="180" as="geometry"/>
+                    <mxGeometry x="140" y="420" width="540" height="130" as="geometry"/>
                 </mxCell>
                 <mxCell id="pole-structure" value="🔧&lt;br&gt;&lt;b&gt;可折叠拍摄杆&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#666666&quot;&gt;伸缩式设计&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#bbdefb;strokeColor=#1976d2;strokeWidth=2;fontFamily=Microsoft YaHei;" parent="shooting-pole" vertex="1">
                     <mxGeometry x="20" y="40" width="150" height="60" as="geometry"/>
@@ -46,14 +46,11 @@
                 <mxCell id="phone-mount" value="📱&lt;br&gt;&lt;b&gt;手机固定夹具&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#666666&quot;&gt;万向调节&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#bbdefb;strokeColor=#1976d2;strokeWidth=2;fontFamily=Microsoft YaHei;" parent="shooting-pole" vertex="1">
                     <mxGeometry x="190" y="40" width="150" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="stabilizer" value="⚖️&lt;br&gt;&lt;b&gt;重力配平器&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#666666&quot;&gt;减震稳定&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#bbdefb;strokeColor=#1976d2;strokeWidth=2;fontFamily=Microsoft YaHei;" parent="shooting-pole" vertex="1">
-                    <mxGeometry x="20" y="110" width="150" height="60" as="geometry"/>
-                </mxCell>
                 <mxCell id="handle" value="🤝&lt;br&gt;&lt;b&gt;人体工学手柄&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#666666&quot;&gt;防滑设计&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#bbdefb;strokeColor=#1976d2;strokeWidth=2;fontFamily=Microsoft YaHei;" parent="shooting-pole" vertex="1">
-                    <mxGeometry x="190" y="110" width="150" height="60" as="geometry"/>
+                    <mxGeometry x="360" y="40" width="150" height="60" as="geometry"/>
                 </mxCell>
                 <mxCell id="mobile-device" value="📱 手机设备" style="swimlane;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#1976d2;strokeWidth=2;shadow=1;fontFamily=Microsoft YaHei;startSize=30;" parent="1" vertex="1">
-                    <mxGeometry x="560" y="410" width="360" height="180" as="geometry"/>
+                    <mxGeometry x="720" y="410" width="700" height="140" as="geometry"/>
                 </mxCell>
                 <mxCell id="phone-camera" value="📷&lt;br&gt;&lt;b&gt;手机摄像头&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#666666&quot;&gt;4K高清拍摄&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff3e0;strokeColor=#f57c00;strokeWidth=2;fontFamily=Microsoft YaHei;" parent="mobile-device" vertex="1">
                     <mxGeometry x="20" y="40" width="150" height="60" as="geometry"/>
@@ -62,16 +59,16 @@
                     <mxGeometry x="190" y="40" width="150" height="60" as="geometry"/>
                 </mxCell>
                 <mxCell id="phone-storage" value="💾&lt;br&gt;&lt;b&gt;本地存储&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#666666&quot;&gt;图片缓存&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff3e0;strokeColor=#f57c00;strokeWidth=2;fontFamily=Microsoft YaHei;" parent="mobile-device" vertex="1">
-                    <mxGeometry x="20" y="110" width="150" height="60" as="geometry"/>
+                    <mxGeometry x="360" y="40" width="150" height="60" as="geometry"/>
                 </mxCell>
                 <mxCell id="phone-comm" value="📡&lt;br&gt;&lt;b&gt;无线通信&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#666666&quot;&gt;蓝牙/WiFi&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff3e0;strokeColor=#f57c00;strokeWidth=2;fontFamily=Microsoft YaHei;" parent="mobile-device" vertex="1">
-                    <mxGeometry x="190" y="110" width="150" height="60" as="geometry"/>
+                    <mxGeometry x="530" y="40" width="150" height="60" as="geometry"/>
                 </mxCell>
                 <mxCell id="backpack-desc" value="🎒&lt;br&gt;&lt;b&gt;背包式携带&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#666666&quot;&gt;便携移动&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#1976d2;strokeWidth=2;shadow=1;fontFamily=Microsoft YaHei;" parent="1" vertex="1">
-                    <mxGeometry x="980" y="450" width="140" height="100" as="geometry"/>
+                    <mxGeometry x="1500" y="450" width="140" height="100" as="geometry"/>
                 </mxCell>
                 <mxCell id="edge-background" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f3e5f5;strokeColor=#7b1fa2;strokeWidth=3;shadow=1;glass=0;sketch=0;" parent="1" vertex="1">
-                    <mxGeometry x="100" y="680" width="1720" height="350" as="geometry"/>
+                    <mxGeometry x="100" y="680" width="1720" height="280" as="geometry"/>
                 </mxCell>
                 <mxCell id="edge-title" value="⚡ 边缘计算层 (Edge)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;fontStyle=1;fontColor=#6a1b9a;fontFamily=Microsoft YaHei;" parent="1" vertex="1">
                     <mxGeometry x="130" y="690" width="280" height="35" as="geometry"/>
@@ -85,10 +82,10 @@
                 <mxCell id="detection" value="🎯 目标检测 (PPYOLOE-Plus)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff8e1;strokeColor=#f57f17;strokeWidth=2;fontFamily=Microsoft YaHei;" parent="ai-engine" vertex="1">
                     <mxGeometry x="10" y="40" width="100" height="35" as="geometry"/>
                 </mxCell>
-                <mxCell id="segmentation" value="📐 指针分割 (OCRNet)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff8e1;strokeColor=#f57f17;strokeWidth=2;fontFamily=Microsoft YaHei;" vertex="1" parent="ai-engine">
+                <mxCell id="segmentation" value="📐 指针分割 (OCRNet)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff8e1;strokeColor=#f57f17;strokeWidth=2;fontFamily=Microsoft YaHei;" parent="ai-engine" vertex="1">
                     <mxGeometry x="120" y="40" width="100" height="35" as="geometry"/>
                 </mxCell>
-                <mxCell id="endpoint" value="🔍 刻度定位 (HRNet)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff8e1;strokeColor=#f57f17;strokeWidth=2;fontFamily=Microsoft YaHei;" vertex="1" parent="ai-engine">
+                <mxCell id="endpoint" value="🔍 刻度定位 (HRNet)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff8e1;strokeColor=#f57f17;strokeWidth=2;fontFamily=Microsoft YaHei;" parent="ai-engine" vertex="1">
                     <mxGeometry x="230" y="40" width="100" height="35" as="geometry"/>
                 </mxCell>
                 <mxCell id="ocr" value="📝 数值读取 (PPOCRv3)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff8e1;strokeColor=#f57f17;strokeWidth=2;fontFamily=Microsoft YaHei;" parent="ai-engine" vertex="1">
@@ -107,12 +104,12 @@
                     <mxGeometry x="270" y="40" width="110" height="35" as="geometry"/>
                 </mxCell>
                 <mxCell id="hardware-platform" value="🚀 硬件平台" style="swimlane;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#7b1fa2;strokeWidth=2;shadow=1;fontFamily=Microsoft YaHei;startSize=30;" parent="1" vertex="1">
-                    <mxGeometry x="1050" y="770" width="320" height="70" as="geometry"/>
+                    <mxGeometry x="1050" y="770" width="320" height="120" as="geometry"/>
                 </mxCell>
-                <mxCell id="jetson" value="🖥️ NVIDIA Jetson Xavier NX | 21 TOPS | 6核ARM | 8GB内存" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1bee7;strokeColor=#8e24aa;strokeWidth=2;fontFamily=Microsoft YaHei;" parent="hardware-platform" vertex="1">
-                    <mxGeometry x="20" y="35" width="280" height="30" as="geometry"/>
+                <mxCell id="jetson" value="🖥️ NVIDIA Jetson Xavier NX | 21 TOPS | 6核ARM | 16GB内存" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1bee7;strokeColor=#8e24aa;strokeWidth=2;fontFamily=Microsoft YaHei;" parent="hardware-platform" vertex="1">
+                    <mxGeometry x="20" y="40" width="280" height="45" as="geometry"/>
                 </mxCell>
-                <mxCell id="communication" value="📡 通信协议栈" style="swimlane;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#7b1fa2;strokeWidth=2;shadow=1;fontFamily=Microsoft YaHei;startSize=30;" parent="1" vertex="1">
+                <mxCell id="communication" value="📡 局域网传输" style="swimlane;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#7b1fa2;strokeWidth=2;shadow=1;fontFamily=Microsoft YaHei;startSize=30;" parent="1" vertex="1">
                     <mxGeometry x="1420" y="770" width="320" height="120" as="geometry"/>
                 </mxCell>
                 <mxCell id="wifi" value="📶 WiFi 6&lt;br&gt;300Mbps+" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e3f2fd;strokeColor=#1976d2;strokeWidth=2;fontFamily=Microsoft YaHei;" parent="communication" vertex="1">
@@ -163,10 +160,10 @@
                 <mxCell id="analysis-service" value="📈 智能分析服务" style="swimlane;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#f57c00;strokeWidth=2;shadow=1;fontFamily=Microsoft YaHei;startSize=30;" parent="1" vertex="1">
                     <mxGeometry x="1420" y="1180" width="350" height="90" as="geometry"/>
                 </mxCell>
-                <mxCell id="realtime-monitor" value="📺 实时监控中心 | 关键指标预警" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e8f5e8;strokeColor=#4caf50;strokeWidth=2;fontFamily=Microsoft YaHei;" parent="analysis-service" vertex="1">
+                <mxCell id="realtime-monitor" value="📺 实时监控中心&amp;nbsp;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e8f5e8;strokeColor=#4caf50;strokeWidth=2;fontFamily=Microsoft YaHei;" parent="analysis-service" vertex="1">
                     <mxGeometry x="20" y="40" width="310" height="20" as="geometry"/>
                 </mxCell>
-                <mxCell id="trend-analysis" value="📊 趋势分析引擎 | AI预测算法" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e8f5e8;strokeColor=#4caf50;strokeWidth=2;fontFamily=Microsoft YaHei;" parent="analysis-service" vertex="1">
+                <mxCell id="trend-analysis" value="📊 智能分析引擎&amp;nbsp;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e8f5e8;strokeColor=#4caf50;strokeWidth=2;fontFamily=Microsoft YaHei;" parent="analysis-service" vertex="1">
                     <mxGeometry x="20" y="65" width="310" height="20" as="geometry"/>
                 </mxCell>
                 <mxCell id="security" value="🔒 安全管理中心" style="swimlane;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#f57c00;strokeWidth=2;shadow=1;fontFamily=Microsoft YaHei;startSize=30;" parent="1" vertex="1">
@@ -192,7 +189,8 @@
                         <mxPoint x="740" y="620" as="sourcePoint"/>
                         <mxPoint x="350" y="770" as="targetPoint"/>
                         <Array as="points">
-                            <mxPoint x="500" y="530"/>
+                            <mxPoint x="990" y="650"/>
+                            <mxPoint x="500" y="650"/>
                         </Array>
                     </mxGeometry>
                 </mxCell>
@@ -216,6 +214,10 @@
                     <mxGeometry relative="1" as="geometry">
                         <mxPoint x="570" y="260" as="sourcePoint"/>
                         <mxPoint x="740" y="410" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="570" y="350"/>
+                            <mxPoint x="990" y="350"/>
+                        </Array>
                     </mxGeometry>
                 </mxCell>
                 <mxCell id="flow-user-terminal-label" value="手持拍摄操作" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;fontFamily=Microsoft YaHei;fillColor=#e8f5e8;strokeColor=#4caf50;rounded=1;" parent="flow-user-terminal" vertex="1" connectable="0">
@@ -228,8 +230,8 @@
                         <mxPoint x="1595" y="1180" as="sourcePoint"/>
                         <mxPoint x="770" y="260" as="targetPoint"/>
                         <Array as="points">
-                            <mxPoint x="1595" y="1160"/>
-                            <mxPoint x="1880" y="1160"/>
+                            <mxPoint x="1595" y="1110"/>
+                            <mxPoint x="1880" y="1110"/>
                             <mxPoint x="1880" y="290"/>
                             <mxPoint x="770" y="290"/>
                         </Array>
@@ -245,8 +247,8 @@
                         <mxPoint x="1595" y="1210" as="sourcePoint"/>
                         <mxPoint x="970" y="260" as="targetPoint"/>
                         <Array as="points">
-                            <mxPoint x="1575" y="1160"/>
-                            <mxPoint x="1850" y="1160"/>
+                            <mxPoint x="1575" y="1060"/>
+                            <mxPoint x="1850" y="1060"/>
                             <mxPoint x="1850" y="290"/>
                             <mxPoint x="970" y="290"/>
                         </Array>
@@ -256,45 +258,6 @@
                     <mxGeometry x="-0.1" y="1" relative="1" as="geometry">
                         <mxPoint as="offset"/>
                     </mxGeometry>
-                </mxCell>
-                <mxCell id="tech-title" value="🚀 核心技术栈" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;fontStyle=1;fontColor=#1565c0;fontFamily=Microsoft YaHei;" parent="1" vertex="1">
-                    <mxGeometry x="130" y="1520" width="150" height="30" as="geometry"/>
-                </mxCell>
-                <mxCell id="tech-mechanical" value="🔧 机械设计&lt;br&gt;可折叠拍摄杆 | 万向固定夹具 | 重力配平" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#bbdefb;strokeColor=#1976d2;strokeWidth=2;fontFamily=Microsoft YaHei;shadow=1;" parent="1" vertex="1">
-                    <mxGeometry x="130" y="1560" width="200" height="50" as="geometry"/>
-                </mxCell>
-                <mxCell id="tech-ai" value="🤖 AI算法&lt;br&gt;PPYOLOE-Plus | OCRNet | HRNet | PPOCRv3" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff8e1;strokeColor=#f57f17;strokeWidth=2;fontFamily=Microsoft YaHei;shadow=1;" parent="1" vertex="1">
-                    <mxGeometry x="350" y="1560" width="200" height="50" as="geometry"/>
-                </mxCell>
-                <mxCell id="tech-hardware" value="⚡ 硬件平台&lt;br&gt;NVIDIA Jetson Xavier NX | ARM Cortex-A78" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1bee7;strokeColor=#8e24aa;strokeWidth=2;fontFamily=Microsoft YaHei;shadow=1;" parent="1" vertex="1">
-                    <mxGeometry x="570" y="1560" width="200" height="50" as="geometry"/>
-                </mxCell>
-                <mxCell id="tech-comm" value="📡 通信协议&lt;br&gt;WiFi 6 | 蓝牙5.2 | 5G | LoRaWAN" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e3f2fd;strokeColor=#1976d2;strokeWidth=2;fontFamily=Microsoft YaHei;shadow=1;" parent="1" vertex="1">
-                    <mxGeometry x="790" y="1560" width="200" height="50" as="geometry"/>
-                </mxCell>
-                <mxCell id="tech-cloud" value="☁️ 云端架构&lt;br&gt;微服务 | Kubernetes | 大数据分析" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffcc80;strokeColor=#f57c00;strokeWidth=2;fontFamily=Microsoft YaHei;shadow=1;" parent="1" vertex="1">
-                    <mxGeometry x="1010" y="1560" width="200" height="50" as="geometry"/>
-                </mxCell>
-                <mxCell id="performance-title" value="📊 性能指标" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;fontStyle=1;fontColor=#1565c0;fontFamily=Microsoft YaHei;" parent="1" vertex="1">
-                    <mxGeometry x="1250" y="1520" width="150" height="30" as="geometry"/>
-                </mxCell>
-                <mxCell id="performance-accuracy" value="🎯 识别准确率&lt;br&gt;&lt;b&gt;≥95%&lt;/b&gt;&lt;br&gt;&lt;font size=&quot;2&quot;&gt;(±4%误差)&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#c8e6c9;strokeColor=#4caf50;strokeWidth=2;fontFamily=Microsoft YaHei;shadow=1;" parent="1" vertex="1">
-                    <mxGeometry x="1250" y="1560" width="100" height="50" as="geometry"/>
-                </mxCell>
-                <mxCell id="performance-speed" value="⚡ 响应时间&lt;br&gt;&lt;b&gt;≤3秒&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#c8e6c9;strokeColor=#4caf50;strokeWidth=2;fontFamily=Microsoft YaHei;shadow=1;" parent="1" vertex="1">
-                    <mxGeometry x="1370" y="1560" width="100" height="50" as="geometry"/>
-                </mxCell>
-                <mxCell id="performance-precision" value="📏 读数精度&lt;br&gt;&lt;b&gt;±4%≥95%&lt;/b&gt;&lt;br&gt;&lt;font size=&quot;2&quot;&gt;±2%≥90%&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#c8e6c9;strokeColor=#4caf50;strokeWidth=2;fontFamily=Microsoft YaHei;shadow=1;" parent="1" vertex="1">
-                    <mxGeometry x="1490" y="1560" width="100" height="50" as="geometry"/>
-                </mxCell>
-                <mxCell id="performance-battery" value="🔋 续航时间&lt;br&gt;&lt;b&gt;8-10小时&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#c8e6c9;strokeColor=#4caf50;strokeWidth=2;fontFamily=Microsoft YaHei;shadow=1;" parent="1" vertex="1">
-                    <mxGeometry x="1610" y="1560" width="100" height="50" as="geometry"/>
-                </mxCell>
-                <mxCell id="performance-weight" value="⚖️ 设备重量&lt;br&gt;&lt;b&gt;≤3kg&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#c8e6c9;strokeColor=#4caf50;strokeWidth=2;fontFamily=Microsoft YaHei;shadow=1;" parent="1" vertex="1">
-                    <mxGeometry x="1730" y="1560" width="100" height="50" as="geometry"/>
-                </mxCell>
-                <mxCell id="2" value="🤖 大模型辅助&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;&lt;b style=&quot;border-color: var(--border-color);&quot;&gt;异常检测&lt;/b&gt;&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;&lt;font style=&quot;border-color: var(--border-color);&quot; size=&quot;2&quot;&gt;(趋势分析)&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#c8e6c9;strokeColor=#4caf50;strokeWidth=2;fontFamily=Microsoft YaHei;shadow=1;" parent="1" vertex="1">
-                    <mxGeometry x="1250" y="1630" width="100" height="50" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>
